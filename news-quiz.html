@@ -33,11 +33,11 @@
 
     $('#grade-it').on('click', function() {
 
-  var utPaper = $('question-1').val();
+  var answer1 = $('#question-1 .form-control').val();
 
-  if (utPaper == 'The Daily Texan') {
+  if (answer1 == 'The Daily Texan') {
     $('#question-1').addClass('has-success');
-  } else if (utPaper == 'Austin American-Statesman') {
+  } else if (answer1 == 'Austin American-Statesman') {
   $('#question-1').addClass('has-error');
   } else {
   $('#question-1').addClass('has-error');
