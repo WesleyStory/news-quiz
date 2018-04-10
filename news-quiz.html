@@ -43,11 +43,11 @@
   $('#question-1').addClass('has-error');
   }
 
-var answer2 = $('#question-2 .form-control').val();
+var numQuestion = $('#question-2 .form-control').val();
 
-  if (answer2 == '50,000') {
+  if (numQuestion == 'answer-2') {
     $('#question-2').addClass('has-success');
-  } else {
+  } if (numQuestion == 'answer-1') {
   $('#question-2').addClass('has-error');
   }
 })
