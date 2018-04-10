@@ -22,10 +22,20 @@
         </select>
       </div>
 
+      <div id="question-3" class="form-group">
+        <label class="control-label">What US newspaper has the largest circulation?</label>
+        <input type="text" class="form-control" />
+      </div>
+
       <div class="form-group">
         <input id="grade-it" type="button" value="Grade my quiz" class="btn btn-primary" />
       </div>
     </div>
+
+    <div class="form-group">
+      <input id="show-answers" type="button" value="Show me the answers" class="btn btn-primary" />
+    </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -34,6 +44,9 @@
     $('#grade-it').on('click', function() {
 
   var answer1 = $('#question-1 .form-control').val();
+
+  $('#question-1').removeClass('has-success');
+  $('#question-1').removeClass('has-error');
 
   if (answer1 == 'The Daily Texan') {
     $('#question-1').addClass('has-success');
@@ -45,11 +58,26 @@
 
 var numQuestion = $('#question-2 .form-control').val();
 
+$('#question-2').removeClass('has-success');
+$('#question-2').removeClass('has-error');
+
   if (numQuestion == 'answer-2') {
     $('#question-2').addClass('has-success');
   } if (numQuestion == 'answer-1') {
   $('#question-2').addClass('has-error');
   }
+
+  var answer3 = $('#question-3 .form-control').val();
+
+  $('#question-3').removeClass('has-success');
+  $('#question-3').removeClass('has-error');
+
+  if (answer3 == 'USA Today') {
+    $('#question-3').addClass('has-success');
+  } else {
+  $('#question-3').addClass('has-error');
+  }
+
 })
     </script>
   </body>
