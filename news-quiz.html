@@ -15,10 +15,10 @@
       </div>
 
       <div id="question-2" class="form-group">
-        <label class="control-label">What is the name of the current press secretary?</label>
+        <label class="control-label">How many students attend UT?</label>
         <select class="form-control">
-          <option value="answer-1">Sarah Huckabee Sanders</option>
-          <option value="answer-2">Sean Spicer</option>
+          <option value="answer-1">5</option>
+          <option value="answer-2">50,000</option>
         </select>
       </div>
 
@@ -41,6 +41,14 @@
   $('#question-1').addClass('has-error');
   } else {
   $('#question-1').addClass('has-error');
+  }
+
+var answer2 = $('#question-2 .form-control').val();
+
+  if (answer2 == '50,000') {
+    $('#question-2').addClass('has-success');
+  } else {
+  $('#question-2').addClass('has-error');
   }
 })
     </script>
