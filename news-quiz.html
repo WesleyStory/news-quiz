@@ -77,8 +77,18 @@ $('#question-2').removeClass('has-error');
   } else {
   $('#question-3').addClass('has-error');
   }
-
 })
+
+  $('#show-answers').on('click', function() {
+
+  $('#question-1 .form-control').val('The Daily Texan');
+
+  $('#question-2 .form-control').val('answer-2');
+
+  $('#question-3 .form-control').val('USA Today');
+
+  })
     </script>
+
   </body>
 </html>
